@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_fill_mode</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .box{
+        width: 150px;
+        height: 150px;
+        background: black;
+        margin-left: 20px;
+        animation: sample 2s infinite ;
+        /* animation-duration: 2s; */
+        /* animation-iteration-count: infinite;
+        animation-direction: alternate; */
+        animation-fill-mode: forwards;
+
+        /* animation-direction  property 
+          1.none
+          2.both
+          3.backwards
+          4.forwards
+        */
+
+        .box :hover{
+            animation-play-state: paused;
+        }
+        /* Animation-Play-State_value
+          1.Paused
+          2. Running
+          
+        
+        
+        */
+
+      }
+
+      @keyframes sample {
+        0%{background: yellow;
+         width: 250px;
+        }
+        50%{background: green;
+         width: 350px;
+        }
+        100%{background: red;
+         width: 450px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 50px;"> Hello world Game bye bye</h1> 
+   <div class="box"></div>
+</body>
+</html>

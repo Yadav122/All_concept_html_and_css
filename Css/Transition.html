@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        #box{
+            width: 150px;
+            height: 150px;
+            background:pink;
+            transition: all 1s linear;
+            margin-bottom: 60px;
+           /* transition-property:width ,height ;
+            transition-duration: 1s, 1s ,2s;
+            transition-timing-function: steps(4,start);
+            transition-timing-function: step-end; 
+           transition-timing-function: cubic-bezier(0.1,0.7,1.0,0.1); */
+            /* cubic-bezier is used for multiple time delays */
+            /* transition-delay: 2s; */
+            
+        }
+        /* #box:active{
+            width: 300px;
+            height: 400px;
+            background: orange;
+        }
+        input{
+            width: 150px;
+            transition: width 1.5s;
+        }
+        input:focus{
+            width: 300px;
+        } */
+
+        @media screen and(max-width:960px) {
+            #box{
+                width:300px;
+                height:300px ;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!--Properties
+        1. Transition
+        2.Transition-property
+        3.Transition-duration
+        4.Transition-delay
+        5.Transition-timing-function
+    -->
+    <h1>Hellow world : Css Transition</h1>
+    <div id="box"></div>
+    <input type="text" alt="">
+</body>
+</html>

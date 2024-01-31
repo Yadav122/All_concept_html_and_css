@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background-Blend-Mode</title>
+   <style>
+    body{
+        font-family: arial;
+
+    }
+    #box{
+        width: 440px;
+        height: 440px;
+        border: 2px solid green;
+        background-image: linear-gradient(to right ,red,yellow),url('chat_message_icon.png');
+        background-blend-mode:saturation ;
+        background-repeat: no-repeat;
+
+        /* background-blend-mode \
+        it is used for the linear gradient and image url boths are used in the background images.
+        */
+    }
+   </style>
+</head>
+<body>
+    <h1>Hello world : Css Background-Blend-Mode</h1>
+    <div id="box">
+        <h2> Background-Blend-Mode</h2>
+    </div>
+    
+</body>
+</html>

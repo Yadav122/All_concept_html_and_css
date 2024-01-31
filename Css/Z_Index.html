@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-Index</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+      #box1{
+        width: 200px;
+         height: 200px;
+         position: absolute;
+         border: 1px solid #000;
+         font-size: 25px;
+        background:darkseagreen;
+        top: 100px ;
+        left: 50px;
+        z-index: 1;
+      }
+    #box2{
+        width: 200px;
+         height: 200px;
+         position: absolute;
+         border: 1px solid #000;
+         font-size: 25px;
+         background: peachpuff;
+        top: 150px;
+         left: 100px;
+         z-index: 2;
+      }
+    #box3{
+        width: 200px;
+         height: 200px;
+         position: absolute;
+         border: 1px solid #000;
+         font-size: 25px;
+       background: lightskyblue;
+       top: 200px;
+       left: 150px;
+       z-index: 3;
+      }
+    #box4{
+        width: 200px;
+         height: 200px;
+         position: absolute;
+         border: 1px solid #000;
+         font-size: 25px;
+       background: green;
+       top: 250px;
+       left: 200px;
+       z-index: 4;
+      }
+
+    </style>
+</head>
+<body>
+     <h1> Harsh kumar : CSS z-Index </h1>
+     <div id="box1">A</div>
+     <div id="box2">B</div>
+     <div id="box3">C</div>
+     <div id="box4">d</div>
+</body>
+</html>

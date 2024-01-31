@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>:target Selector</title>
+    <style>
+        .tab div {
+            display: none;
+        }
+ 
+        .tab div:target {
+            display: block;
+            color: white;
+            background: green;
+            padding: 5px;
+            margin: 20px 5px;
+        }
+    </style>
+</head>
+ 
+<body style="text-align:center">
+    <h2>
+        :target selector
+    </h2>
+    <div class="tab">
+        <a href="#geek">Geeks Classes</a>
+        <div id="geek">
+            <h3>Welcome to Geeks Classes.</h3>
+ 
+            <p>Hello World!</p>
+ 
+        </div>
+    </div>
+</body>
+ 
+</html>

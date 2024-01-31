@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit_and_Explicit</title>
+    <style>
+   body{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   h1{
+    padding: 0 0 0 40px;
+   }
+   .container{
+    background: #eee;
+    width: 650px;
+    margin: 45px auto 0;
+    grid-template-columns:repeat(2,1fr);
+    display: grid;
+    grid-template-rows: repeat(2,120px);
+    grid-gap: 15px;
+    /* grid-auto-rows: 80px; */
+    grid-auto-flow: column;
+    grid-auto-columns: .5fr;
+
+
+   }
+   .item1{
+    background: lightblue;
+   }
+   .item2{
+    background: orange;
+   }
+   .item3{
+    background: lightgreen;
+   }
+   .item4{
+    background: lightblue;
+   }
+   .item5{
+    background: blueviolet;
+   }
+   .item6{
+    background: blue;
+   }
+   .item7{
+    background:greenyellow ;
+   }
+   .item8{
+    background: lightsalmon;
+   }
+
+   /* 
+   1. grid-auto-rows
+   2.grid-auto-columns
+   3.grid-auto-flows
+   */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Foue</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>   
+        <div class="items item8">Eight</div>   
+       </div>
+</body>
+</html>

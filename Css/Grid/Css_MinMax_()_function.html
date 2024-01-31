@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_MinMax_Fuction</title>
+    <style>
+        /* 
+        1.Max-content
+        2.Min-content
+        3.Minmax()
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            padding: 0 0 0 40px;
+        }
+
+        .container{
+            background: wheat;
+            width: 700px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: max-content 1fr 1fr min-content;
+            grid-template-rows: repeat(2,Minmax(150px , min-content));
+            grid-gap: 5px;
+        }
+        .item1{
+            background: lightblue;
+        }
+        .item2{
+            background: lightcoral;
+        }
+        .item3{
+            background: lightblue;
+        }
+        .item4{
+            background: lightgrey;
+        }
+        .item5{
+            background: orange;
+        }
+        .item6{
+            background: blue;
+        }
+        .item7{
+            background:orange ;
+        }
+        .item8{
+            background: lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+     <div class="items item1">One my name is harsh kumar .we will proud of it</div>
+     <div class="items item2">Two</div>
+     <div class="items item3">Three</div>
+     <div class="items item4">Four I am learning the launguage of CSS and html after that i will start the frontent frameworks </div>
+     <div class="items item5">Five</div>
+     <div class="items item6">Six  Hello gugs I am harsh kumar .we will proud of it </div>
+     <div class="items item7">Seven</div>
+     <div class="items item8">Eight   </div>
+     
+
+
+    </div>
+    
+</body>
+</html>

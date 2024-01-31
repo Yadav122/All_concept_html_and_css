@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eee;
+         }
+         .card{
+            width: 300px;
+            height: 18.75rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            line-height: 300px;
+            margin: -150px;
+            background: white;
+            color:grey;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+
+            /* Animation property */
+            animation-name: sample;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            
+            /* animation-delay: 2s ; */
+            /* Animation -Direction Values
+               1.Normal
+               2.Reverse
+               3.Alternate
+               4.Alternate-reverse
+            */
+
+
+
+
+            /* shorthand */
+            /* animation: sample 2s infinite alternate; */
+
+
+
+
+
+
+            /* animation-timing-function Values property
+            1.ease ----> slow start ,then fast ,then end slowly
+            2.linear----> same speed from start to end
+            3.ease-in----> slow start
+            4.ease-out---> slow end 
+            5.ease-in-out---> slow start and end 
+            6.step-out----->Equivalent to steps(1,end)
+            7.step-end----->Equivalent to steps(1,end)
+            8.steps(#,start/end)
+            9.cubic-bezier  -----> lets you define you down values(0 to 1)
+            */
+           
+            
+            animation-timing-function: ease;
+         }
+         @keyframes sample {
+          /* from{ border-radius: 0; */
+          0%{ border-radius: 0;
+           color: tomato;
+            }
+
+            50%{
+                background-color:lightgreen;
+                color: brown;
+            }
+          100%{
+          /* to{ */
+            border-radius: 50%;
+            background-color: tomato;
+            color: white;
+            
+          } 
+         }
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 50px;">Hello  world</h1>
+    <div class="card">Hello Harsh</div>
+
+</body>
+</html>

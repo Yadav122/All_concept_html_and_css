@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Introduction</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container{
+        background: #eee;
+        width: 700px;
+        margin: 70px 0 0 50px;
+        display: grid;
+        grid-template-columns:1fr 2fr 1fr;
+        grid-template-rows: 150px 100px 100px;
+        grid-gap: 20px;
+      }
+      .items1{
+        background: orangered;
+      }
+      .items2{
+        background: yellowgreen;
+      }
+      .items3{
+        background: greenyellow;
+      }
+      .items4{
+        background: pink;
+      }
+      .items5{
+        background: hotpink;
+      }
+      .items6{
+        background: lightcoral;
+      }
+    </style>
+</head>
+<body>
+     <h1>Yahho Baba :CSS Grid</h1>
+
+    <!--  
+     1.Two dimensional grid System
+     2.Css grid Layout replaces Float layout
+     3. Fat and clean Code
+     4.No need of Css Frameworks
+    -->
+
+    <!-- Grid property 
+     1.grid-template-columns
+     2.grid-template-row
+    -->
+  <div class="container">
+   
+    <div class="items items1"> First</div>
+    <div class="items items2"> Second</div>
+    <div class="items items3">Third</div>
+    <div class="items items4">Fourth</div>
+    <div class="items items5">Fifth</div>
+    <div class="items items6">Sixth</div>
+
+  </div>
+
+
+</body>
+</html>

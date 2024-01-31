@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix-Blend-Mode</title>
+    <style>
+        body{
+            font-family: arial;
+
+        }
+        #box{
+            width: 440px;
+            height: 440px;
+            border: 2px green solid;
+            background-color: red;
+           
+        }
+        img{
+            mix-blend-mode: darken;
+        }
+        h2{
+            background: red;
+            text-align: center;
+            font-size: 55px;
+            margin-top: 150px;
+            /* Mix-Blend-Mode 
+            1.Normal      7.Color-dodge   15.color
+            2.multiply    8.Color-burn    16 Saturation
+            3.screen      9.hard-liht     17 Iuminosity
+            10.soft-light 11.soft-light
+            4.Overlay     12 difference
+            5.Darken      13 exclusion
+            6.Lighten     14.hue
+            
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world : CSS Mix-Blend-Mode</h1>
+    <div id="box">
+        <img src="shri ram.jpg" alt="">
+      <h2>
+        Mix-Blend-Mode
+      </h2>
+         
+    </div>
+    
+</body>
+</html>

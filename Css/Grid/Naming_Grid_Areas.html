@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naming-grid-Line</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         
+         .container{
+            width: 750px;
+            margin: 45px auto 0px;
+            background: #fff;
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:120px  60px 100px 400px 50px;
+            grid-gap: 15px;
+            text-align: center;
+            padding: 12px;
+            grid-template-areas: "header header header "
+            
+                   "menu menu  menu"
+                   "box1 box2 sidebar"
+                   "content content sidebar"
+                   "footer footer footer"
+            ;
+         }
+
+
+
+         .header{
+            background: orange;
+            grid-area: header;
+           
+          
+         }
+         .menu{
+            background: lightgreen;
+            grid-area:  menu;
+            
+            
+         }
+         .box1{
+            background: green;
+            grid-area: box1 ;
+         }
+         .box2{
+            background: green;
+            grid-area: box2;
+         }
+         .sidebar{
+
+            background: green;
+            grid-area: sidebar;
+    
+         }
+         .content{
+            background: green;
+            grid-area: content;
+           
+         }
+         .footer{
+            background: green;
+            grid-area: footer;
+            height: 50px;
+            
+         }
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="items header">Header</div>
+     <div class="items menu">Menu</div>
+     <div class="items box1">Box 1</div>
+     <div class="items box2">Box 2</div>
+     <div class="items sidebar">Siderbar</div>
+     <div class="items content">Content</div>
+     <div class="items footer">Footer</div>
+
+
+    </div>
+</body>
+</html>
