@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Flexbox</title>
+    <style>
+
+
+     /* CSS Flex-direction values
+       1.row
+       2.row-reverse
+       3.column
+       4.column-reverse
+     */
+
+     .container{
+        width: 300px;
+        background: #eee;
+        margin: 50px auto 0;
+        padding: 10px;
+        border: 3px solid #000;
+        display: flex;
+        height: 100px;
+        /* flex-direction: column; */
+
+        /* 
+        flex-wrap a value
+        1.nowrap
+        2.wrap
+        3.wrap-reverse
+        
+        */
+       /* flex-wrap: wrap; */
+
+
+       /* Shorthand
+       flex-flow:<flex-direction><flex-wrap>;
+       */
+       flex-flow: column wrap ;
+
+
+        
+     }
+
+     .item1{
+        background: orangered;
+     }
+     .item2{
+        background: yellowgreen;
+     }
+     .item3{
+        background: mediumaquamarine;
+     }
+     .item4{
+        background: mediumorchid;
+     }
+     .item5{
+        background: hotpink;
+     }
+     .item6{
+        background: mediumspringgreen;
+     }
+     .item7{
+        background: mediumspringgreen;
+     }
+     .item8{
+        background: mediumturquoise;
+     }
+     .items{color: #fff; font-size: 20px; font-weight: bold;}
+         
+
+
+
+    </style>
+</head>
+<body>
+       <div class="container">
+         <div class="items item1" >One</div>
+         <div class="items item2" >Two</div>
+         <div class="items item3" >Three</div>
+         <div class="items item4" >Four</div>
+         <div class="items item5" >Five</div>
+         <div class="items item6" >Six</div>
+         <div class="items item7" >Seven</div>
+         <div class="items item8" >Eight</div>
+       </div>
+</body>
+</html>

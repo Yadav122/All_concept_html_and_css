@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Flexbox</title>
+    <style>
+
+     /* CSS Align-content values
+      1.auto
+      2.flex-start
+      3.flex-end
+      4.center
+      5.stretch
+      6.baseline
+     */
+      
+     .container{
+        width: 400px;
+        background: #eee;
+        margin: 50px auto 0;
+        padding: 10px;
+        height: 150px;
+        border: 3px solid #000;
+        display: flex;
+        align-items:center ; 
+     }
+
+     .item1{
+        background: orangered;
+        align-self: flex-start;
+     }
+     .item2{
+        background: yellowgreen;
+     }
+     .item3{
+        background: mediumaquamarine;
+     }
+     .item4{
+        background: mediumorchid;
+     }
+     .item5{
+        background: hotpink;
+     }
+     .item6{
+       background: mediumspringgreen;
+     }
+     .item7{
+       background: mediumvioletred;
+     }
+     .item8{
+       background: mediumblue;
+     }
+     .items{color: #fff; font-size: 20px; font-weight: bold;}
+
+
+    </style>
+</head>
+<body>
+       <div class="container">
+         <div class="items item1" >One</div>
+         <div class="items item2" >Two</div>
+         <div class="items item3" >Three</div>
+         <div class="items item4" >Four</div>
+         <div class="items item5" >Five</div>
+         <div class="items item6" >Six</div>
+         <div class="items item7" >Seven</div>
+         <div class="items item8" >Eight</div>
+       </div>
+</body>
+</html>l
